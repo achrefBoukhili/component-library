@@ -1,0 +1,11 @@
+.buttonContainer {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 125px);
+  right: 50%;
+  width: 300px;
+
+  button {
+    border: none;
+  }
+}

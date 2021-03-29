@@ -1,0 +1,42 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "package for shared core components",
+  "author": "ace <achref.boukhii@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/core.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "^0.62.2",
+    "rebass": "^4.0.7",
+    "styled-components": "^5.1.0",
+    "styled-system": "^5.1.5"
+  },
+  "devDependencies": {
+    "babel-jest": "^26.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "jest": "^25.4.0",
+    "jest-emotion": "^10.0.32",
+    "jest-styled-components": "^7.0.2",
+    "react-device-detect": "^1.13.1",
+    "react-test-renderer": "^16.13.1"
+  }
+}

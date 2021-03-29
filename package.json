@@ -1,0 +1,33 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "monorepo for the frontend (web && mobile)",
+  "private": true,
+  "engines" : {
+    "node" : "^12.0.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**"
+    ]
+  },
+  "scripts": {
+    "clean": "rm -rf ./packages/*/node_modules",
+    "clean-locks": "rm -rf ./packages/*/yarn.lock",
+    "bootstrap": "lerna bootstrap",
+    "reset": "yarn clean && yarn clean-locks && yarn bootstrap",
+    "start-web": "cd ./packages/web/;yarn start",
+    "start-mobile": "cd ./packages/mobile/;yarn",
+    "update-package": "lernaupdate --lazy"
+  },
+  "author": "Achref Boukhili",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "lerna-update-wizard": "^0.17.8"
+  }
+}
